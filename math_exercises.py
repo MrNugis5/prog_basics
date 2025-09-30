@@ -1,8 +1,32 @@
-import time
+"""Math exercises vol2."""
 import math
-# Time converter
-seconds = 44
-minutes = seconds // 60
-hours = minutes // 60
-minutes = minutes % 60
-print(f"{seconds} sekundit on {hours} tund(i) ja {minutes} minut(it).")
+
+
+def time_converter(seconds: int) -> str:
+    """Convert time in seconds to hours and minutes."""
+    minutes = seconds // 60
+    hours = minutes // 60
+    minutes = minutes % 60
+    return f"{seconds} sekundit on {hours} tund(i) ja {minutes} minut(it)."
+
+
+def student_helper(angle: int) -> str:
+    """Return the sine and cosine of the given angle in degrees."""
+    rad = math.radians(angle)
+    sine = math.sin(rad)
+    cosine = math.cos(rad)
+    sine = round(sine, 1)
+    cosine = round(cosine, 1)
+    return f"Nurk: {angle}, siinus: {sine}, koosinus: {cosine}."
+
+
+def greetings(n: int) -> str:
+    """Return a string that contains "Hey" n times."""
+    lots_of_heys = str("Hey") * n
+    return lots_of_heys
+
+
+def adding_numbers(num_a: int, num_b: int) -> str:
+    """Return given numbers added together as a string."""
+    string_numbers = str(num_a) + str(num_b)
+    return string_numbers
