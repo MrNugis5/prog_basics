@@ -1,24 +1,35 @@
-#inside the function
+"""Function examples."""
+
+
+# func()
 def func():
+    """aaa."""
     print("I´m inside the function")
 
-#my name is...
-name = "martin"
-def my_name_is(name) ->str:
-    print("My name is " + (name))
-    
 
-#Sum six
-num = 2    
-sum_six(num) ->int:
+# my_name_is(name)
+def my_name_is(name) -> str:
+    """aaa."""
+    print("My name is " + (name))
+
+
+# sum_six(num)
+def sum_six(num) -> int:
+    """aaa."""
     return 6 + num
 
-#SUm numbers
-a = 2
-b =  4
+
+# sum_numbers()
 def sum_numbers(a: int, b: int):
+    """aaa."""
     return a + b
 
-sum_numbers()
+
+# usd_to_eur()
+def usd_to_eur(usd: int):
+    """aaa."""
+    return usd * 0.8
+
+
     
     
