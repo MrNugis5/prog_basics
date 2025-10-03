@@ -1,29 +1,24 @@
-import math
+#inside the function
+def func():
+    print("I´m inside the function")
 
-
-def print_hello():
-    Print("hello")
-
-
-def get_hello():
-    return print_hello()
-
-
-def ask_name_and_greet_user():
-   name = input("What is your name: ")
-   capitalized_name = name.capitalize()
-   if name == "Thanos":
-       print("Get out of here, Thanosw! Nobody wants to play with you!")
-       
-   else:
-       print("Hi," + capitalized_name, ". Would you like to have a Hamburger")
+#my name is...
+name = "martin"
+def my_name_is(name) ->str:
+    print("My name is " + (name))
     
+
+#Sum six
+num = 2    
+sum_six(num) ->int:
+    return 6 + num
+
+#SUm numbers
+a = 2
+b =  4
+def sum_numbers(a: int, b: int):
+    return a + b
+
+sum_numbers()
     
-def calculate_hypotenuse_lenght(a: float,b: float) -> float:
-    return math.sqrt(a ** 2 + b ** 2)
-
-
-def calculate_cathetus_lenght(a: float, c: float) -> float:
-    math.sqrt(c ** 2 - a ** 2)
-
     
