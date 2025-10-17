@@ -89,4 +89,19 @@ def compound_interest(amount: int, years: int, rate: int) -> float:
 
 
 
-print(compound_interest(100, 2, 2))
+#remove vowels
+def remove_vowels(original_string: str) -> str:
+    """
+    Return the given string without vowels.
+    
+    print(remove_vowels("tere-tere")) => tr-tr
+    print(remove_vowels("hklmn")) => hklmn
+    print(remove_vowels("aauuiii")) => ""
+    """
+    result = ""
+    vowel = "aeiouAEIOU"
+    for pl in original_string:
+        if pl in vowel:
+            result += pl
+    return result        
+    
