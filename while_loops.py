@@ -1,26 +1,25 @@
+"""While loop exercises."""
 import random
 
-#make hola string
+
 def make_hola_string(count: int) -> str:
     """
     Make hola string.
-    
+
     print(make_hola_string(3)) => "holaholahola"
     print(make_hola_string(0)) => ""
     """
-  
     result = ""
     while count > 0:
         result += "hola"
         count -= 1
     return result
-            
-        
-#string with random lenght
+
+
 def generate_string_with_random_length(threshold: float) -> str:
     """
     Generate a string of "-" until random numbers is below threshold.
-    
+
     Use random.random() to generate a random float.
     If the random number is below threshold, add "-" to result.
     If the random number is greater or equal to the threshold, finish the loop.
@@ -37,7 +36,6 @@ def generate_string_with_random_length(threshold: float) -> str:
     return result
 
 
-#kasutaja vanuse küsimine
 def ask_user_age(age_limit: int) -> int:
     """
     Ask user age.
@@ -69,22 +67,17 @@ def ask_user_age(age_limit: int) -> int:
 
     (function returns 21)
     """
-    
     while True:
-        user_input = input("What is your age?: ")
-        if user_input.isalpha:
+        try:
+            age = int(input())
+        except ValueError:
             print("Wrong input!")
+            continue
+        if age < age_limit:
+            print("Too young!")
+        elif age > 100:
+            print("Too old!")
         else:
-            age = int(user_input)
-            if age < age_limit:
-                print("Too young")
-            elif age > 100:
-                print("Too old")
-            elif age == age_limit:
-                return age
+            return age
 
-            
-print(ask_user_age(50))
-
-
-
+    return 10
