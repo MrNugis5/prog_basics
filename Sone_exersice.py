@@ -1,8 +1,10 @@
+first_name = "James"
+last_name = "Bond"
+full_name = f"James Bond"
+self_description_sentence = f"My name is {last_name}, {first_name} {last_name}."
 cake = "vahukoor\nmarjad\ntäidis\npõhi"
 print(cake)
 original_string = "Programming is fun!"
-backward = original_string[::-1]
+backwards = original_string[::-1]
 every_other = original_string[::2]
-first_word_reversed = original_string[0:11::-1]
-print(first_word_reversed)
-
+first_word_reversed = original_string[10::-1]
