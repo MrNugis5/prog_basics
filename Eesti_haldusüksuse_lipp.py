@@ -1,0 +1,21 @@
+from tkinter import *
+
+
+root = Tk()
+root.geometry("800x500")
+root.title("Harju maakona vapp")
+canva = Canvas(width=800, height= 500)
+canva.pack()
+down = canva.create_rectangle(0, 300, 800, 500, fill="green")
+upper_right = canva.create_rectangle(415, 40, 475, 100, fill="red")
+upper_left = canva.create_rectangle(335, 40, 395, 100, fill="red")
+lower_right = canva.create_rectangle(415, 120, 475, 180, fill="red")
+lower_left = canva.create_rectangle(335, 120, 395, 180, fill="red")
+lower_right_arc = canva.create_arc(353, 150, 476, 210, start=270, extent=90, fill="red")
+lower_left_arc = canva.create_arc(334, 150, 456, 210, start=180, extent=90, fill="red")
+outline_up = canva.create_line(395, 40, 415, 40, fill="black")
+outline_right_side = canva.create_line(475, 100, 475, 120, fill="black")
+outline_left_side = canva.create_line(335, 100, 335, 120, fill="black")
+line_left_down = canva.create_line(395, 210, 405, 218, fill="black")
+line_rigth_down = canva.create_line(405, 218, 415, 210, fill="black")
+root.mainloop()
